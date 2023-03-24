@@ -69,7 +69,7 @@ export default function CoreTrack() {
             CoreTrackData.map((items)=>{ console.log(items.header + " babar")})
           }; */}
           {CoreTrackData.map((items, i) => (
-            <Quarter text={items.header} desc={items.description} log={i + 1}  />
+            <Quarter key={items.number}  text={items.header} desc={items.description} log={i + 1}  />
           ))}
         </div>
       </Wrapper>
